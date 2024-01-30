@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "BROWSER=chrome npm run react-scripts start",
     "lint": "next lint",
     "prettier": "prettier src",
     "format": "concurrently \"npm run lint\" \"npm run prettier\""
@@ -13,6 +13,7 @@
   "dependencies": {
     "concurrently": "^8.2.2",
     "next": "14.1.0",
+    "open": "^10.0.3",
     "react": "^18",
     "react-dom": "^18"
   },
