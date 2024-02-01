@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "BROWSER=chrome npm run react-scripts start",
     "lint": "next lint",
-    "prettier": "prettier src",
+    "prettier": "prettier --write src",
     "format": "concurrently \"npm run lint\" \"npm run prettier\""
   },
   "dependencies": {
