@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project Alpha",
+      "description": "This is the first project.",
+      "tasks": [
+        {
+          "id": "1",
+          "title": "Task 1",
+          "description": "This is the first task for Project Alpha.",
+          "status": "In Progress",
+          "dueDate": "2024-03-01"
+        },
+        {
+          "id": "2",
+          "title": "Task 2",
+          "description": "This is the second task for Project Alpha.",
+          "status": "Not Started",
+          "dueDate": "2024-03-15"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Project Beta",
+      "description": "This is the second project.",
+      "tasks": [
+        {
+          "id": "3",
+          "title": "Task 1",
+          "description": "This is the first task for Project Beta.",
+          "status": "Completed",
+          "dueDate": "2024-02-01"
+        },
+        {
+          "id": "4",
+          "title": "Task 2",
+          "description": "This is the second task for Project Beta.",
+          "status": "In Progress",
+          "dueDate": "2024-02-15"
+        }
+      ]
+    }
+  ]
+}
