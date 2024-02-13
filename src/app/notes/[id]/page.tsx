@@ -9,7 +9,11 @@ const Page = ({ params }: { params: { id: string } }) => {
         .map((folder) => (
           <div key={folder.id}>
             {folder.notes.map((note) => (
-              <div key={note.id}>{note.title}</div>
+              <div key={note.id}>
+                <p className="border py-4 px-4 flex flex-col gap-4">
+                  {note.title}
+                </p>
+              </div>
             ))}
           </div>
         ))}
