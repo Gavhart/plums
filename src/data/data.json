@@ -6,7 +6,7 @@
       "notes": [
         {
           "id": "1",
-          "title": "Note 1",
+          "title": "HTML Classes",
           "content": "This is the content of Note 1",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
@@ -14,7 +14,7 @@
         },
         {
           "id": "2",
-          "title": "Note 2",
+          "title": "HTML Symbols",
           "content": "This is the content of Note 2",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
@@ -28,7 +28,7 @@
       "notes": [
         {
           "id": "3",
-          "title": "Note 3",
+          "title": "CSS Borders",
           "content": "This is the content of Note 3",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
@@ -36,7 +36,7 @@
         },
         {
           "id": "4",
-          "title": "Note 4",
+          "title": "CSS Forms",
           "content": "This is the content of Note 4",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",

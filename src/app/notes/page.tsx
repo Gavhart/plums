@@ -9,13 +9,6 @@ export default function TasksPage() {
           <Link href={`notes/${folder.id}`}>
             <p>{folder.name}</p>
           </Link>
-          {/* todo Displau this data when clicking this data
-          {folder.notes.map((note) => (
-            <div key={note.id}>
-              <p>{note.title}</p>
-              <p>{note.content}</p>
-            </div>
-          ))}*/}
         </div>
       ))}
     </>
