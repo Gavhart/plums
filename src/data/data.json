@@ -1,44 +1,46 @@
 {
-  "projects": [
+  "folders": [
     {
       "id": "1",
-      "name": "Project Alpha",
-      "description": "This is the first project.",
-      "tasks": [
+      "name": "Folder 1",
+      "notes": [
         {
           "id": "1",
-          "title": "Task 1",
-          "description": "This is the first task for Project Alpha.",
-          "status": "In Progress",
-          "dueDate": "2024-03-01"
+          "title": "Note 1",
+          "content": "This is the content of Note 1",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag1", "tag2"]
         },
         {
           "id": "2",
-          "title": "Task 2",
-          "description": "This is the second task for Project Alpha.",
-          "status": "Not Started",
-          "dueDate": "2024-03-15"
+          "title": "Note 2",
+          "content": "This is the content of Note 2",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag3", "tag4"]
         }
       ]
     },
     {
       "id": "2",
-      "name": "Project Beta",
-      "description": "This is the second project.",
-      "tasks": [
+      "name": "Folder 2",
+      "notes": [
         {
           "id": "3",
-          "title": "Task 1",
-          "description": "This is the first task for Project Beta.",
-          "status": "Completed",
-          "dueDate": "2024-02-01"
+          "title": "Note 3",
+          "content": "This is the content of Note 3",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag5", "tag6"]
         },
         {
           "id": "4",
-          "title": "Task 2",
-          "description": "This is the second task for Project Beta.",
-          "status": "In Progress",
-          "dueDate": "2024-02-15"
+          "title": "Note 4",
+          "content": "This is the content of Note 4",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag7", "tag8"]
         }
       ]
     }
