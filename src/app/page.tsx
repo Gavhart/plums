@@ -1,9 +1,11 @@
 import CardContainer from "@/components/CardContainer";
+import AddIcon from "@/components/AddIcon";
 
 export default function Home() {
   return (
-      <div>
-        <CardContainer />
-      </div>
-  )
+    <div>
+      <AddIcon />
+      <CardContainer />
+    </div>
+  );
 }
