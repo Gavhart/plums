@@ -11,6 +11,8 @@
     "format": "concurrently \"npm run lint\" \"npm run prettier\""
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.9",
     "concurrently": "^8.2.2",
     "next": "14.1.0",
     "open": "^10.0.3",

@@ -1,44 +1,46 @@
 {
-  "projects": [
+  "folders": [
     {
       "id": "1",
-      "name": "Project Alpha",
-      "description": "This is the first project.",
-      "tasks": [
+      "name": "HTML",
+      "notes": [
         {
           "id": "1",
-          "title": "Task 1",
-          "description": "This is the first task for Project Alpha.",
-          "status": "In Progress",
-          "dueDate": "2024-03-01"
+          "title": "HTML Classes",
+          "content": "The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag1", "tag2"]
         },
         {
           "id": "2",
-          "title": "Task 2",
-          "description": "This is the second task for Project Alpha.",
-          "status": "Not Started",
-          "dueDate": "2024-03-15"
+          "title": "HTML Symbols",
+          "content": "Many mathematical, technical, and currency symbols, are not present on a normal keyboard.",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag3", "tag4"]
         }
       ]
     },
     {
       "id": "2",
-      "name": "Project Beta",
-      "description": "This is the second project.",
-      "tasks": [
+      "name": "CSS",
+      "notes": [
         {
           "id": "3",
-          "title": "Task 1",
-          "description": "This is the first task for Project Beta.",
-          "status": "Completed",
-          "dueDate": "2024-02-01"
+          "title": "CSS Borders",
+          "content": "The CSS border properties allow you to specify the style, width, and color of an element's border.",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag5", "tag6"]
         },
         {
           "id": "4",
-          "title": "Task 2",
-          "description": "This is the second task for Project Beta.",
-          "status": "In Progress",
-          "dueDate": "2024-02-15"
+          "title": "CSS Forms",
+          "content": "The look of an HTML form can be greatly improved with CSS:",
+          "created_at": "2024-02-13T22:37:01Z",
+          "updated_at": "2024-02-13T22:37:01Z",
+          "tags": ["tag7", "tag8"]
         }
       ]
     }
