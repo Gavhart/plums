@@ -1,5 +1,8 @@
 import React from "react";
 import projectData from "@/data/data.json";
+import { Breadcrumbs } from "@material-tailwind/react";
+
+// todo display breadcrumbs home / folders / notes / note name
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   return (
