@@ -7,7 +7,7 @@
         {
           "id": "1",
           "title": "HTML Classes",
-          "content": "This is the content of Note 1",
+          "content": "The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
           "tags": ["tag1", "tag2"]
@@ -15,7 +15,7 @@
         {
           "id": "2",
           "title": "HTML Symbols",
-          "content": "This is the content of Note 2",
+          "content": "Many mathematical, technical, and currency symbols, are not present on a normal keyboard.",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
           "tags": ["tag3", "tag4"]
@@ -29,7 +29,7 @@
         {
           "id": "3",
           "title": "CSS Borders",
-          "content": "This is the content of Note 3",
+          "content": "The CSS border properties allow you to specify the style, width, and color of an element's border.",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
           "tags": ["tag5", "tag6"]
@@ -37,7 +37,7 @@
         {
           "id": "4",
           "title": "CSS Forms",
-          "content": "This is the content of Note 4",
+          "content": "The look of an HTML form can be greatly improved with CSS:",
           "created_at": "2024-02-13T22:37:01Z",
           "updated_at": "2024-02-13T22:37:01Z",
           "tags": ["tag7", "tag8"]
