@@ -12,7 +12,6 @@ const Page = ({ params }: { params: { folderId: string } }) => {
   );
   const folderName = folder ? folder.name : "";
   const folderId = folder ? folder.id : "";
-  console.log(folderId);
 
   return (
     <div>

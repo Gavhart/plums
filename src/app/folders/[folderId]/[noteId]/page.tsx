@@ -1,12 +1,31 @@
 import React from "react";
 import projectData from "@/data/data.json";
-import { Breadcrumbs } from "@material-tailwind/react";
+import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
 
-// todo display breadcrumbs home / folders / notes / note name
+// todo display breadcrumbs home / folders / folderid / note name
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
+  const folder = projectData.folders.find(
+    (folder) => folder.id === params.folderId,
+  );
+  const folderName = folder ? folder.name : "";
+  const folderId = folder ? folder.id : "";
+  // get note names
+  const note = folder
+    ? folder.notes.find((note) => note.id === params.noteId)
+    : "";
+  const noteName = note ? note.title : "";
+  const noteId = note ? note.id : "";
+  console.log(noteName);
+
   return (
     <div>
+      <NoteNameBreadcrumbs
+        folderName={folderName}
+        folderId={folderId}
+        noteName={noteName}
+        noteId={noteId}
+      />
       {projectData.folders
         .filter((folder) => folder.id === params.folderId)
         .map((folder) => (
