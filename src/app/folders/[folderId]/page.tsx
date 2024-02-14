@@ -3,8 +3,6 @@ import projectData from "@/data/data.json";
 import Link from "next/link";
 import FolderNameBreadcrumbs from "@/components/Breadcrumbs/FolderNameBreadcrumbs";
 
-// todo display breadcrumbs home / folders / folder name
-
 const Page = ({ params }: { params: { folderId: string } }) => {
   const folder = projectData.folders.find(
     (folder) => folder.id === params.folderId,

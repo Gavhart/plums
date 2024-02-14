@@ -2,8 +2,6 @@ import React from "react";
 import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
 
-// todo display breadcrumbs home / folders / folderid / note name
-
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   const folder = projectData.folders.find(
     (folder) => folder.id === params.folderId,
