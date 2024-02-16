@@ -40,8 +40,8 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
           </div>
         ))}
 
-        <p>Quill Editor</p>
-        <QuillEditor />
+      <p>Quill Editor</p>
+      <QuillEditor />
     </div>
   );
 };

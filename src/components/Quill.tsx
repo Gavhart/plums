@@ -1,18 +1,25 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react';
-import Quill from 'quill';
+import React from 'react';
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css'; // import the styles
 
-const QuillEditor = () => {
-  const quillRef = useRef(null);
+class QuillComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { text: '' }; // You can also pass a Quill Delta here
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-  useEffect(() => {
-    if (quillRef.current) {
-      new Quill(quillRef.current);
-    }
-  }, []);
+  handleChange(value) {
+    this.setState({ text: value });
+  }
 
-  return <div className="border border-black" ref={quillRef} />;
-};
+  render() {
+    return (
+        <ReactQuill value={this.state.text} onChange={this.handleChange} />
+    );
+  }
+}
 
-export default QuillEditor;
+export default QuillComponent;
