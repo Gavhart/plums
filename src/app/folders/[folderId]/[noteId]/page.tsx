@@ -1,8 +1,7 @@
 import React from "react";
 import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
-import QuillEditor from "@/components/Quill";
-import Froala from "@/components/Froala";
+import { TextEditorReact } from "@/components/Lexical";
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   const folder = projectData.folders.find(
@@ -40,12 +39,7 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
               ))}
           </div>
         ))}
-
-      {/*<p>Quill Editor</p>*/}
-      {/*<QuillEditor />*/}
-
-        <p>Froala editor</p>
-        <Froala />
+      <TextEditorReact />
     </div>
   );
 };
