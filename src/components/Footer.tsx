@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center bg-white ">
+    <footer className="flex justify-center bg-white">
       © {new Date().getFullYear()} PLUMS. All rights reserved.
     </footer>
   );
