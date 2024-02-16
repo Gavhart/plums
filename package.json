@@ -19,6 +19,7 @@
     "quill": "^2.0.0-rc.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-froala-wysiwyg": "^4.1.4",
     "react-quill": "^2.0.0"
   },
   "devDependencies": {
