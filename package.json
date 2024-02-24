@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "open-cli http://localhost:3000 && react-scripts start",
+    "dev": "next dev",
     "build": "next build",
-    "start": "BROWSER=chrome npm run react-scripts start",
+    "start": "npm run dev",
     "lint": "next lint",
     "prettier": "prettier --write src",
     "format": "concurrently \"npm run lint\" \"npm run prettier\""
