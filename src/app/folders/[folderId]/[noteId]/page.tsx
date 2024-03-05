@@ -1,7 +1,6 @@
 import React from "react";
 import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
-import { TextEditorReact } from "@/components/Lexical";
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   const folder = projectData.folders.find(
@@ -39,7 +38,6 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
               ))}
           </div>
         ))}
-      <TextEditorReact />
     </div>
   );
 };

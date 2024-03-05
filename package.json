@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "BROWSER=chrome npm run react-scripts start",
     "lint": "next lint",
@@ -12,13 +12,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
-    "@lexical/code": "^0.13.1",
-    "@lexical/link": "^0.13.1",
-    "@lexical/list": "^0.13.1",
-    "@lexical/react": "^0.13.1",
-    "@lexical/rich-text": "^0.13.1",
-    "@lexical/selection": "^0.13.1",
-    "@lexical/utils": "^0.13.1",
     "@material-tailwind/react": "^2.1.9",
     "concurrently": "^8.2.2",
     "lexical": "^0.13.1",

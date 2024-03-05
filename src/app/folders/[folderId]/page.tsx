@@ -13,11 +13,19 @@ const Page = ({ params }: { params: { folderId: string } }) => {
   return (
     <div>
       <FolderNameBreadcrumbs folderName={folderName} folderId={folderId} />
+
+      {/*  Add text  */}
+      <p>+ text</p>
+      {/*  Add link  */}
+      <p>+ link</p>
+      {/*  Add image  */}
+      <p>+ image</p>
+
       {projectData.folders
         .filter((folder) => folder.id === params.folderId)
         .map((folder) => (
           <div key={folder.id}>
-            <p className="text-2xl bold py-4 pl-4">{folder.name} Folder</p>
+            <p className="text-2xl bold py-4 pl-4">{folder.name} Topic</p>
             {folder.notes.map((note) => (
               <div key={note.id}>
                 <Link href={`/folders/${params.folderId}/${note.id}`}>
