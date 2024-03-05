@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from '../assets/plums.webp';
-import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/solid';
+import React from "react";
+import logo from "../assets/plums.webp";
+import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const Header = () => {
   return (
@@ -26,4 +26,3 @@ const Header = () => {
 };
 
 export default Header;
-

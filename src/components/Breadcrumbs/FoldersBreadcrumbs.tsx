@@ -12,7 +12,7 @@ const FoldersBreadcrumbs = () => {
         placeholder={null}
       >
         <Link href="/">Home</Link>
-        <Link href="/folders/">Folders</Link>
+        <Link href="/folders/">Topics</Link>
       </Breadcrumbs>
     </div>
   );

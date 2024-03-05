@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-20 Import notes data from notes.json">
+    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-30 WYSIWYG added">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_30_24__6_06PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +73,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -86,7 +91,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PLUM-30&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -160,10 +165,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.prettier" />
-        <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.format" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -178,6 +183,8 @@
       <updated>1701397928933</updated>
       <workItem from="1706652635425" duration="2206000" />
       <workItem from="1707185357707" duration="616000" />
+      <workItem from="1708565323269" duration="228000" />
+      <workItem from="1709069723074" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -203,7 +210,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706653829302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="PLUM-30 Quill attempt 1">
+      <option name="closed" value="true" />
+      <created>1708041079852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708041079852</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PLUM-30 Quill attempt 2">
+      <option name="closed" value="true" />
+      <created>1708049071900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708049071900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="PLUM-30 Froala attempt 1">
+      <option name="closed" value="true" />
+      <created>1708050143955</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708050143955</updated>
+    </task>
+    <task id="LOCAL-00007" summary="PLUM-30 WYSIWYG added">
+      <option name="closed" value="true" />
+      <created>1708052804994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708052804994</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +261,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="PLUM-30 Quill attempt 1" />
+    <MESSAGE value="PLUM-30 Quill attempt 2" />
+    <MESSAGE value="PLUM-30 Froala attempt 1" />
+    <MESSAGE value="PLUM-30 WYSIWYG added" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-30 WYSIWYG added" />
   </component>
 </project>

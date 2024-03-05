@@ -20,7 +20,7 @@ const FolderNameBreadcrumbs = ({
         placeholder={null}
       >
         <Link href="/">Home</Link>
-        <Link href="/folders/">Folders</Link>
+        <Link href="/folders/">Topics</Link>
         <Link href={`/folders/${folderId}`}>{folderName}</Link>
       </Breadcrumbs>
     </div>

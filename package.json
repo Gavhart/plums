@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "npm run dev",
     "lint": "next lint",
@@ -14,10 +14,14 @@
     "@heroicons/react": "^2.1.1",
     "@material-tailwind/react": "^2.1.9",
     "concurrently": "^8.2.2",
+    "lexical": "^0.13.1",
     "next": "14.1.0",
     "open": "^10.0.3",
+    "quill": "^2.0.0-rc.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-froala-wysiwyg": "^4.1.4",
+    "react-quill": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
