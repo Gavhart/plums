@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
-    "start": "BROWSER=chrome npm run react-scripts start",
+    "start": "npm run dev",
     "lint": "next lint",
     "prettier": "prettier --write src",
     "format": "concurrently \"npm run lint\" \"npm run prettier\""
@@ -30,6 +30,7 @@
     "autoprefixer": "^10.4.17",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "open-cli": "^8.0.0",
     "postcss": "^8.4.33",
     "prettier": "3.2.4",
     "tailwindcss": "^3.4.1",
