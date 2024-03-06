@@ -14,7 +14,7 @@ const TopicsData = async () => {
       {topics.map((topic: Topic) => (
         <div key={topic.id} className="border py-4 px-4 flex flex-col gap-4">
           <Link href={`/topics/${topic.id}`}>
-            <p>{topic.name.toUpperCase()}</p>
+            <p>{topic.name}</p>
           </Link>
         </div>
       ))}

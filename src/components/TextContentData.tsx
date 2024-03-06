@@ -8,6 +8,7 @@ const TextContentData = async ({ noteId }: { noteId: string }) => {
   }
   return (
     <div>
+      <p>{noteContent.title}</p>
       <p>{noteContent.content}</p>
     </div>
   );

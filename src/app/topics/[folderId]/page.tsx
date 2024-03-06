@@ -16,7 +16,7 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
     <div>
       <TopicNameBreadCrumb
         folderId={params.folderId}
-        currentTopic={topicName.name.toUpperCase()}
+        currentTopic={topicName.name}
       />
 
       {/*<p>+ text</p>*/}

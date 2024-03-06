@@ -14,7 +14,7 @@ const TextNotesData = async ({ topicId }: { topicId: string }) => {
               <span>
                 <DocumentTextIcon className="2-5 h-5" />
               </span>
-              {textNote.title.toUpperCase()}
+              {textNote.title}
             </p>
           </Link>
         </div>

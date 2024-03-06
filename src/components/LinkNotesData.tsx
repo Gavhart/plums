@@ -14,7 +14,7 @@ const LinkNotesData = async ({ topicId }: { topicId: string }) => {
               <span>
                 <LinkIcon className="2-5 h-5" />
               </span>
-              {linkNote.title.toUpperCase()}
+              {linkNote.title}
             </p>
           </Link>
         </div>

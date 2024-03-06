@@ -14,7 +14,7 @@ const ImageNotesData = async ({ topicId }: { topicId: string }) => {
               <span>
                 <PhotoIcon className="2-5 h-5" />
               </span>
-              {imageNote.title.toUpperCase()}
+              {imageNote.title}
             </p>
           </Link>
         </div>
