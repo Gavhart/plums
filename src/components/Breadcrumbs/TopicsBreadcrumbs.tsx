@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@material-tailwind/react";
 
-const FoldersBreadcrumbs = () => {
+const TopicsBreadcrumbs = () => {
   return (
     <div>
       <Breadcrumbs
@@ -18,4 +18,4 @@ const FoldersBreadcrumbs = () => {
   );
 };
 
-export default FoldersBreadcrumbs;
+export default TopicsBreadcrumbs;

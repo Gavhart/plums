@@ -1,12 +1,12 @@
 import projectData from "@/data/data.json";
 import Link from "next/link";
-import FoldersBreadcrumbs from "@/components/Breadcrumbs/FoldersBreadcrumbs";
+import TopicsBreadcrumbs from "@/components/Breadcrumbs/TopicsBreadcrumbs";
 import TopicsData from "@/components/TopicsData";
 
 export default function FoldersPage() {
   return (
     <>
-      <FoldersBreadcrumbs />
+      <TopicsBreadcrumbs />
       <TopicsData />
     </>
   );
