@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-30 WYSIWYG added">
-      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 Add prisma to project">
+      <change afterPath="$PROJECT_DIR$/src/lib/queries/imageNoteQueries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/queries/linkNoteQueries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/queries/textNoteQueries.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/queries/topicNameQueries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +80,9 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -248,11 +252,42 @@
       <option name="project" value="LOCAL" />
       <updated>1708052804994</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="PLUM-33 Updated to topics">
+      <option name="closed" value="true" />
+      <created>1709689102358</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709689102358</updated>
+    </task>
+    <task id="LOCAL-00009" summary="PLUM-33 Updated links">
+      <option name="closed" value="true" />
+      <created>1709689333534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709689333534</updated>
+    </task>
+    <task id="LOCAL-00010" summary="PLUM-33 Add prisma to project">
+      <option name="closed" value="true" />
+      <created>1709690069510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709690069510</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/lib/queries/textNoteQueries.js" />
+        <option value="$PROJECT_DIR$/src/lib/queries/linkNoteQueries.js" />
+        <option value="$PROJECT_DIR$/src/lib/queries/imageNoteQueries.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -271,6 +306,9 @@
     <MESSAGE value="PLUM-30 Quill attempt 2" />
     <MESSAGE value="PLUM-30 Froala attempt 1" />
     <MESSAGE value="PLUM-30 WYSIWYG added" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLUM-30 WYSIWYG added" />
+    <MESSAGE value="PLUM-33 Updated to topics" />
+    <MESSAGE value="PLUM-33 Updated links" />
+    <MESSAGE value="PLUM-33 Add prisma to project" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 Add prisma to project" />
   </component>
 </project>

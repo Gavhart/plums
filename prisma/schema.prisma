@@ -24,6 +24,7 @@ model Topic {
 model TextNote {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   content String
+  title   String
   Topic   Topic  @relation(fields: [topicId], references: [id])
   topicId String @db.ObjectId
 }
@@ -31,6 +32,7 @@ model TextNote {
 model ImageNote {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   url     String
+  title   String
   Topic   Topic  @relation(fields: [topicId], references: [id])
   topicId String @db.ObjectId
 }
@@ -38,6 +40,7 @@ model ImageNote {
 model LinkNote {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   url     String
+  title   String
   Topic   Topic  @relation(fields: [topicId], references: [id])
   topicId String @db.ObjectId
 }
