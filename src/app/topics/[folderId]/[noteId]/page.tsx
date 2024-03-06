@@ -3,6 +3,7 @@ import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
 import TextContentData from "@/components/TextContentData";
 import LinkContentData from "@/components/LinkContentData";
+import ImageContentData from "@/components/ImageContentData";
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   const folder = projectData.topics.find(
@@ -28,6 +29,7 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
       />
       <TextContentData noteId={params.noteId} />
       <LinkContentData noteId={params.noteId} />
+      <ImageContentData noteId={params.noteId} />
     </div>
   );
 };

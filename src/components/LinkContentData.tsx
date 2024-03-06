@@ -8,7 +8,6 @@ const LinkContentData = async ({ noteId }: { noteId: string }) => {
   }
   return (
     <div>
-      [link content]
       <p>{linkContent.title}</p>
       <p>{linkContent.url}</p>
     </div>

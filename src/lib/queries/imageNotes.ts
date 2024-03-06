@@ -7,3 +7,11 @@ export async function getImageNotes(topicId: string) {
     },
   });
 }
+
+export async function getImageContent(noteId: string) {
+  return db.imageNote.findFirst({
+    where: {
+      id: noteId,
+    },
+  });
+}
