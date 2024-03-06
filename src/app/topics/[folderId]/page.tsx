@@ -1,20 +1,23 @@
 import React from "react";
 import projectData from "@/data/data.json";
-import FolderNameBreadcrumbs from "@/components/Breadcrumbs/FolderNameBreadcrumbs";
 import TextNotesData from "@/components/TextNotesData";
 import LinkNotesData from "@/components/LinkNotesData";
 import ImageNotesData from "@/components/ImageNotesData";
+import TopicNameBreadCrumb from "@/components/Breadcrumbs/TopicNameBreadCrumb";
+import { getTopicName } from "@/lib/queries/topics";
 
-const Page = ({ params }: { params: { folderId: string } }) => {
-  const folder = projectData.topics.find(
-    (folder) => folder.id === params.folderId,
-  );
-  const folderName = folder ? folder.name : "";
-  const folderId = folder ? folder.id : "";
+const Page = async ({ params }: { params: { folderId: string } }) => {
+  const topicName = await getTopicName(params.folderId);
+  if (!topicName) {
+    return;
+  }
 
   return (
     <div>
-      <FolderNameBreadcrumbs folderName={folderName} folderId={folderId} />
+      <TopicNameBreadCrumb
+        folderId={params.folderId}
+        currentTopic={topicName.name.toUpperCase()}
+      />
 
       {/*<p>+ text</p>*/}
       {/*<p>+ link</p>*/}

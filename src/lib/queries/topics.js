@@ -133,18 +133,28 @@ var __generator =
     }
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTopics = void 0;
+exports.getTopicName = exports.getTopics = void 0;
 var db_1 = require("../db");
 function getTopics() {
   return __awaiter(this, void 0, void 0, function () {
     return __generator(this, function (_a) {
-      switch (_a.label) {
-        case 0:
-          return [4 /*yield*/, db_1.db.topic.findMany()];
-        case 1:
-          return [2 /*return*/, _a.sent()];
-      }
+      return [2 /*return*/, db_1.db.topic.findMany()];
     });
   });
 }
 exports.getTopics = getTopics;
+function getTopicName(folderId) {
+  return __awaiter(this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+      return [
+        2 /*return*/,
+        db_1.db.topic.findFirst({
+          where: {
+            id: folderId,
+          },
+        }),
+      ];
+    });
+  });
+}
+exports.getTopicName = getTopicName;
