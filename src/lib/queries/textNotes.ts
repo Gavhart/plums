@@ -7,3 +7,11 @@ export async function getNotes(topicId: string) {
     },
   });
 }
+
+export async function getNoteContent(noteId: string) {
+  return db.textNote.findFirst({
+    where: {
+      id: noteId,
+    },
+  });
+}
