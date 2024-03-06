@@ -1,8 +1,8 @@
 import React from "react";
 import projectData from "@/data/data.json";
-import Link from "next/link";
 import FolderNameBreadcrumbs from "@/components/Breadcrumbs/FolderNameBreadcrumbs";
 import TextNotesData from "@/components/TextNotesData";
+import LinkNotesData from "@/components/LinkNotesData";
 
 const Page = ({ params }: { params: { folderId: string } }) => {
   const folder = projectData.topics.find(
@@ -15,14 +15,12 @@ const Page = ({ params }: { params: { folderId: string } }) => {
     <div>
       <FolderNameBreadcrumbs folderName={folderName} folderId={folderId} />
 
-      {/*  Add text  */}
-      <p>+ text</p>
-      {/*  Add link  */}
-      <p>+ link</p>
-      {/*  Add image  */}
-      <p>+ image</p>
+      {/*<p>+ text</p>*/}
+      {/*<p>+ link</p>*/}
+      {/*<p>+ image</p>*/}
 
       <TextNotesData topicId={params.folderId} />
+      <LinkNotesData topicId={params.folderId} />
     </div>
   );
 };
