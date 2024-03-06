@@ -2,6 +2,7 @@ import React from "react";
 import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
 import TextContentData from "@/components/TextContentData";
+import LinkContentData from "@/components/LinkContentData";
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
   const folder = projectData.topics.find(
@@ -26,6 +27,7 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
         noteId={noteId}
       />
       <TextContentData noteId={params.noteId} />
+      <LinkContentData noteId={params.noteId} />
     </div>
   );
 };

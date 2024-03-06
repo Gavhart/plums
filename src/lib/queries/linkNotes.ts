@@ -7,3 +7,11 @@ export async function getLinkNotes(topicId: string) {
     },
   });
 }
+
+export async function getLinkContent(noteId: string) {
+  return db.linkNote.findFirst({
+    where: {
+      id: noteId,
+    },
+  });
+}
