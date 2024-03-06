@@ -7,7 +7,7 @@ export default function FoldersPage() {
   return (
     <>
       <FoldersBreadcrumbs />
-        <TopicsData />
+      <TopicsData />
     </>
   );
 }

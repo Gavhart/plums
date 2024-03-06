@@ -22,7 +22,7 @@ const Page = ({ params }: { params: { folderId: string } }) => {
       {/*  Add image  */}
       <p>+ image</p>
 
-        <TextNotesData topicId={params.folderId} />
+      <TextNotesData topicId={params.folderId} />
     </div>
   );
 };
