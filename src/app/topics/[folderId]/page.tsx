@@ -2,6 +2,7 @@ import React from "react";
 import projectData from "@/data/data.json";
 import Link from "next/link";
 import FolderNameBreadcrumbs from "@/components/Breadcrumbs/FolderNameBreadcrumbs";
+import TextNotesData from "@/components/TextNotesData";
 
 const Page = ({ params }: { params: { folderId: string } }) => {
   const folder = projectData.topics.find(
@@ -21,22 +22,7 @@ const Page = ({ params }: { params: { folderId: string } }) => {
       {/*  Add image  */}
       <p>+ image</p>
 
-      {projectData.topics
-        .filter((folder) => folder.id === params.folderId)
-        .map((folder) => (
-          <div key={folder.id}>
-            <p className="text-2xl bold py-4 pl-4">{folder.name} Topic</p>
-            {folder.notes.map((note) => (
-              <div key={note.id}>
-                <Link href={`/topics/${params.folderId}/${note.id}`}>
-                  <p className="border py-4 px-4 flex flex-col gap-4">
-                    {note.title}
-                  </p>
-                </Link>
-              </div>
-            ))}
-          </div>
-        ))}
+        <TextNotesData topicId={params.folderId} />
     </div>
   );
 };
