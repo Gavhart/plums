@@ -4,7 +4,7 @@ import Link from "next/link";
 import FolderNameBreadcrumbs from "@/components/Breadcrumbs/FolderNameBreadcrumbs";
 
 const Page = ({ params }: { params: { folderId: string } }) => {
-  const folder = projectData.folders.find(
+  const folder = projectData.topics.find(
     (folder) => folder.id === params.folderId,
   );
   const folderName = folder ? folder.name : "";
@@ -21,7 +21,7 @@ const Page = ({ params }: { params: { folderId: string } }) => {
       {/*  Add image  */}
       <p>+ image</p>
 
-      {projectData.folders
+      {projectData.topics
         .filter((folder) => folder.id === params.folderId)
         .map((folder) => (
           <div key={folder.id}>

@@ -3,7 +3,7 @@ import projectData from "@/data/data.json";
 import NoteNameBreadcrumbs from "@/components/Breadcrumbs/NoteNameBreadcrumbs";
 
 const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
-  const folder = projectData.folders.find(
+  const folder = projectData.topics.find(
     (folder) => folder.id === params.folderId,
   );
   const folderName = folder ? folder.name : "";
@@ -24,7 +24,7 @@ const Page = ({ params }: { params: { noteId: string; folderId: string } }) => {
         noteName={noteName}
         noteId={noteId}
       />
-      {projectData.folders
+      {projectData.topics
         .filter((folder) => folder.id === params.folderId)
         .map((folder) => (
           <div key={folder.id}>
