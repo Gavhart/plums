@@ -19,9 +19,9 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
         currentTopic={topicName.name}
       />
 
-      {/*<p>+ text</p>*/}
-      {/*<p>+ link</p>*/}
-      {/*<p>+ image</p>*/}
+      <p>+ text</p>
+      <p>+ link</p>
+      <p>+ image</p>
 
       <TextNotesData topicId={params.folderId} />
       <LinkNotesData topicId={params.folderId} />

@@ -7,6 +7,10 @@ export default function FoldersPage() {
   return (
     <>
       <TopicsBreadcrumbs />
+
+      <p>+ topic</p>
+      <p>+ tags</p>
+
       <TopicsData />
     </>
   );
