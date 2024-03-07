@@ -1,15 +1,16 @@
 import React from "react";
 import logo from "../assets/plums.webp";
-import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className='flex flex-col md:flex-row justify-between items-center px-4 py-2 md:px-8 md:py-4'>
-      <div className='flex items-center'>
-        <img className='w-16 h-16 md:w-24 md:h-24' src={logo.src} alt="Logo" />
-        <h1 className='text-xl md:text-3xl font-bold ml-2'>Plums</h1>
+    <header className="flex flex-col md:flex-row justify-between items-center px-4 py-2 md:px-8 md:py-4">
+      <div className="flex items-center">
+        <Image className="w-16 h-16 md:w-24 md:h-24" alt="logo" src={logo} />
+        <h1 className="text-xl md:text-3xl font-bold ml-2">Plums</h1>
       </div>
-      <div className='flex items-center mt-4 md:mt-0'>
+      <div className="flex items-center mt-4 md:mt-0">
         {/* Search bar */}
         <div className="relative">
           <input

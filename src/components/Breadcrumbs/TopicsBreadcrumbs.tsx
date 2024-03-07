@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Breadcrumbs } from "@material-tailwind/react";
 
-const FoldersBreadcrumbs = () => {
+const TopicsBreadcrumbs = () => {
   return (
     <div>
       <Breadcrumbs
@@ -12,10 +12,10 @@ const FoldersBreadcrumbs = () => {
         placeholder={null}
       >
         <Link href="/">Home</Link>
-        <Link href="/folders/">Topics</Link>
+        <Link href="/topics/">Topics</Link>
       </Breadcrumbs>
     </div>
   );
 };
 
-export default FoldersBreadcrumbs;
+export default TopicsBreadcrumbs;
