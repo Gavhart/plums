@@ -4,7 +4,6 @@ import TextContentData from "@/components/TextContentData";
 import LinkContentData from "@/components/LinkContentData";
 import ImageContentData from "@/components/ImageContentData";
 import { getTopicName } from "@/lib/queries/topics";
-import { getNoteContent } from "@/lib/queries/textNotes";
 import { getTitle } from "@/lib/queries/getTitle";
 
 const Page = async ({

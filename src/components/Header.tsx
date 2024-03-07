@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/plums.webp";
-import { MagnifyingGlassIcon, Bars3Icon } from "@heroicons/react/24/solid";
+import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const Header = () => {

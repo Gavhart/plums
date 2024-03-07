@@ -1,5 +1,4 @@
 import { getTopics } from "@/lib/queries/topics";
-import projectData from "@/data/data.json";
 import Link from "next/link";
 
 interface Topic {

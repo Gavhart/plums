@@ -1,5 +1,4 @@
 import React from "react";
-import projectData from "@/data/data.json";
 import TextNotesData from "@/components/TextNotesData";
 import LinkNotesData from "@/components/LinkNotesData";
 import ImageNotesData from "@/components/ImageNotesData";
