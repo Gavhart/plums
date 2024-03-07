@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-20 Import notes data from notes.json">
+    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)">
+      <change afterPath="$PROJECT_DIR$/src/lib/queries/getTitle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/topics/[folderId]/[noteId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/topics/[folderId]/[noteId]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PLUM-20-json-server" />
+        <entry key="$PROJECT_DIR$" value="PLUM-33" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,12 +43,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1706654032" />
+                    <option name="branchName" value="PLUM-33" />
+                    <option name="lastUsedInstant" value="1709678840" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="fix" />
-                    <option name="lastUsedInstant" value="1706653212" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1709678829" />
                   </RecentBranch>
                 </list>
               </option>
@@ -71,14 +73,21 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2bh1jYehBFYfuKcLVUZw6v2ZPeJ" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -86,7 +95,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;PLUM-33&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,9 +105,15 @@
     &quot;npm.format.executor&quot;: &quot;Run&quot;,
     &quot;npm.lint.executor&quot;: &quot;Run&quot;,
     &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.space&quot;,
+    &quot;npm.turbo.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/abrahamjimenezromo/Projects/plums/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
+    ]
   }
 }</component>
   <component name="ReactDesignerToolWindowState">
@@ -110,6 +125,11 @@
       </map>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -117,7 +137,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.turbo">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -158,26 +178,38 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="turbo" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="turbo" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.prettier" />
-        <item itemvalue="npm.format" />
-        <item itemvalue="npm.lint" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.format" />
+        <item itemvalue="npm.turbo" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <changelist id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="" />
       <created>1701397928933</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701397928933</updated>
+      <updated>1709754492410</updated>
       <workItem from="1706652635425" duration="2206000" />
       <workItem from="1707185357707" duration="616000" />
+      <workItem from="1708565323269" duration="228000" />
+      <workItem from="1709069723074" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="Fix">
       <option name="closed" value="true" />
@@ -203,11 +235,100 @@
       <option name="project" value="LOCAL" />
       <updated>1706653829302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
-    <servers />
+    <task id="LOCAL-00004" summary="PLUM-30 Quill attempt 1">
+      <option name="closed" value="true" />
+      <created>1708041079852</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708041079852</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PLUM-30 Quill attempt 2">
+      <option name="closed" value="true" />
+      <created>1708049071900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708049071900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="PLUM-30 Froala attempt 1">
+      <option name="closed" value="true" />
+      <created>1708050143955</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708050143955</updated>
+    </task>
+    <task id="LOCAL-00007" summary="PLUM-30 WYSIWYG added">
+      <option name="closed" value="true" />
+      <created>1708052804994</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708052804994</updated>
+    </task>
+    <task id="LOCAL-00008" summary="PLUM-33 Updated to topics">
+      <option name="closed" value="true" />
+      <created>1709689102358</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709689102358</updated>
+    </task>
+    <task id="LOCAL-00009" summary="PLUM-33 Updated links">
+      <option name="closed" value="true" />
+      <created>1709689333534</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709689333534</updated>
+    </task>
+    <task id="LOCAL-00010" summary="PLUM-33 Add prisma to project">
+      <option name="closed" value="true" />
+      <created>1709690069510</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709690069510</updated>
+    </task>
+    <task active="true" id="LOCAL-00011" summary="PLUM-33 Update prisma schema and add queries">
+      <branch name="PLUM-33" repository="$PROJECT_DIR$" />
+      <changelist id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 Update prisma schema and add queries" />
+      <option name="closed" value="true" />
+      <created>1709692720125</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709754492410</updated>
+    </task>
+    <task id="PLUM-33" summary="Prisma">
+      <created>1708114776892</created>
+      <option name="issue" value="true" />
+      <url>https://team-tech-titans.atlassian.net/browse/PLUM-33</url>
+      <option name="number" value="33" />
+      <option name="presentableId" value="PLUM-33" />
+      <option name="project" value="PLUM" />
+      <updated>1709765541783</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers>
+      <JIRA url="https://team-tech-titans.atlassian.net">
+        <option name="apiType" value="REST_2_0" />
+        <option name="inCloud" value="true" />
+        <option name="jiraVersion" value="1001.0.0-SNAPSHOT" />
+        <option name="searchQuery" value="assignee = currentUser() and project = PLUM and resolution = Unresolved order by updated" />
+        <username>abraham.jimenez.romo@outlook.com</username>
+      </JIRA>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/lib/queries/topics.js" />
+        <option value="$PROJECT_DIR$/src/lib/db.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -222,6 +343,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="PLUM-30 Quill attempt 1" />
+    <MESSAGE value="PLUM-30 Quill attempt 2" />
+    <MESSAGE value="PLUM-30 Froala attempt 1" />
+    <MESSAGE value="PLUM-30 WYSIWYG added" />
+    <MESSAGE value="PLUM-33 Updated to topics" />
+    <MESSAGE value="PLUM-33 Updated links" />
+    <MESSAGE value="PLUM-33 Add prisma to project" />
+    <MESSAGE value="PLUM-33 Update prisma schema and add queries" />
+    <MESSAGE value="PLUM-33 Topics and text data added" />
+    <MESSAGE value="PLUM-33 Lint and format" />
+    <MESSAGE value="PLUM-33 Add link notes data" />
+    <MESSAGE value="PLUM-33 Add image notes data" />
+    <MESSAGE value="PLUM-33 Text content can be displayed" />
+    <MESSAGE value="PLUM-33 Link content can be displayed" />
+    <MESSAGE value="PLUM-33 Fixed linting errors" />
+    <MESSAGE value="PLUM-33 Image content can be displayed" />
+    <MESSAGE value="PLUM-33 Refactored FoldersBreadcrumbs.tsx to TopicsBreadcrumbs.tsx" />
+    <MESSAGE value="PLUM-33 TopicNameBreadCrumb.tsx displays correct data from database" />
+    <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)&#10;&#10;- Removed toUpperCase()" />
+    <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)" />
   </component>
 </project>

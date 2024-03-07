@@ -1,18 +1,16 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { Breadcrumbs } from "@material-tailwind/react";
+import Link from "next/link";
 
-interface FolderNameBreadcrumbsProps {
-  folderName: string;
-  folderId: string;
-}
-
-const FolderNameBreadcrumbs = ({
-  folderName,
+const TopicNameBreadCrumb = ({
+  currentTopic,
   folderId,
-}: FolderNameBreadcrumbsProps) => {
+}: {
+  currentTopic: string;
+  folderId: string;
+}) => {
   return (
     <div>
       <Breadcrumbs
@@ -21,10 +19,10 @@ const FolderNameBreadcrumbs = ({
       >
         <Link href="/">Home</Link>
         <Link href="/topics/">Topics</Link>
-        <Link href={`/topics/${folderId}`}>{folderName}</Link>
+        <Link href={`/topics/${folderId}`}>{currentTopic}</Link>
       </Breadcrumbs>
     </div>
   );
 };
 
-export default FolderNameBreadcrumbs;
+export default TopicNameBreadCrumb;

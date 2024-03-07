@@ -24,9 +24,9 @@ const NoteNameBreadcrumbs = ({
         placeholder={null}
       >
         <Link href="/">Home</Link>
-        <Link href="/folders/">Folders</Link>
-        <Link href={`/folders/${folderId}`}>{folderName}</Link>
-        <Link href={`/folders/${folderId}/${noteId}`}>{noteName}</Link>
+        <Link href="/topics/">Topics</Link>
+        <Link href={`/topics/${folderId}`}>{folderName}</Link>
+        <Link href={`/topics/${folderId}/${noteId}`}>{noteName}</Link>
       </Breadcrumbs>
     </div>
   );
