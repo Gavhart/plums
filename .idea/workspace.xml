@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)">
+    <list default="true" id="7c1a8142-d9af-4f9b-93b6-f20fb6fdbaaf" name="PLUM-40 fix favicon" comment="" />
+    <list id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 Breadcrumbs finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/topics/route.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="PLUM-40" />
+                    <option name="lastUsedInstant" value="1710278245" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="PLUM-33" />
                     <option name="lastUsedInstant" value="1709851176" />
@@ -89,31 +95,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PLUM-33&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.format.executor&quot;: &quot;Run&quot;,
-    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
-    &quot;npm.prettier.executor&quot;: &quot;Run&quot;,
-    &quot;npm.turbo.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/abrahamjimenezromo/Projects/plums/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "PLUM-40",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.format.executor": "Run",
+    "npm.lint.executor": "Run",
+    "npm.prettier.executor": "Run",
+    "npm.turbo.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "tasks.open.task.update.state.enabled": "true",
+    "ts.external.directory.path": "/Users/abrahamjimenezromo/Projects/plums/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -306,16 +313,30 @@
       <option name="number" value="33" />
       <option name="presentableId" value="PLUM-33" />
       <option name="project" value="PLUM" />
-      <updated>1709765541783</updated>
+      <updated>1710018731246</updated>
+    </task>
+    <task active="true" id="PLUM-40" summary="fix favicon">
+      <branch name="main" repository="$PROJECT_DIR$" original="true" />
+      <branch name="PLUM-40" repository="$PROJECT_DIR$" />
+      <changelist id="7c1a8142-d9af-4f9b-93b6-f20fb6fdbaaf" name="PLUM-40 fix favicon" comment="" />
+      <created>1710277776579</created>
+      <option name="issue" value="true" />
+      <url>https://team-tech-titans.atlassian.net/browse/PLUM-40</url>
+      <option name="number" value="40" />
+      <option name="presentableId" value="PLUM-40" />
+      <option name="project" value="PLUM" />
+      <updated>1710278245509</updated>
     </task>
     <option name="localTasksCounter" value="12" />
     <servers>
       <JIRA url="https://team-tech-titans.atlassian.net">
         <option name="apiType" value="REST_2_0" />
+        <commitMessageFormat>{id}</commitMessageFormat>
         <option name="inCloud" value="true" />
         <option name="jiraVersion" value="1001.0.0-SNAPSHOT" />
         <option name="searchQuery" value="assignee = currentUser() and project = PLUM and resolution = Unresolved order by updated" />
-        <username>abraham.jimenez.romo@outlook.com</username>
+        <option name="shouldFormatCommitMessage" value="true" />
+        <username>abraham.jimenez.romo+tools@outlook.com</username>
       </JIRA>
     </servers>
   </component>
@@ -362,6 +383,7 @@
     <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)&#10;&#10;- Removed toUpperCase()" />
     <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)" />
     <MESSAGE value="PLUM-33 Optimize imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 Optimize imports" />
+    <MESSAGE value="PLUM-33 Breadcrumbs finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 Breadcrumbs finished" />
   </component>
 </project>
