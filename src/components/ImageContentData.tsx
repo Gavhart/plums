@@ -8,8 +8,7 @@ const ImageContentData = async ({ noteId }: { noteId: string }) => {
   }
   return (
     <div>
-      <p>{imageContent.title}</p>
-      <p>{imageContent.url}</p>
+      <img src={imageContent.url} alt={imageContent.title} />
     </div>
   );
 };
