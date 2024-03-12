@@ -20,15 +20,15 @@ const Page = async ({
   if (!titles) {
     return;
   }
+
+  const allTitles = [...titles.textTitle, ...titles.imageTitle, ...titles.linkTitle]
+
   return (
     <div>
       <NoteNameBreadcrumbs
         folderName={topicName.name}
         folderId={params.folderId}
-        // noteName={noteContent.title}
-        // noteName={titles.textTitle ? titles.textTitle : titles.linkTitle ? titles.linkTitle : titles.imageTitle ? titles.imageTitle : ""}
-        // noteName={titles.textTitle[0]?.title || titles.imageTitle[0]?.title || titles.linkTitle[0]?.title || noteContent.title}
-        noteName={"noteName"}
+        noteName={allTitles[0].title}
         noteId={params.noteId}
       />
       <TextContentData noteId={params.noteId} />

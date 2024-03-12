@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81e6e680-6bf5-45ec-9a1a-043ee9fc9e75" name="Changes" comment="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)">
-      <change afterPath="$PROJECT_DIR$/src/lib/queries/getTitle.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/topics/[folderId]/[noteId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/topics/[folderId]/[noteId]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PLUM-33" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +42,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="PLUM-33" />
-                    <option name="lastUsedInstant" value="1709678840" />
+                    <option name="lastUsedInstant" value="1709851176" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -190,10 +188,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.prettier" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.format" />
         <item itemvalue="npm.turbo" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.prettier" />
+        <item itemvalue="npm.format" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -363,6 +361,7 @@
     <MESSAGE value="PLUM-33 TopicNameBreadCrumb.tsx displays correct data from database" />
     <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)&#10;&#10;- Removed toUpperCase()" />
     <MESSAGE value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 NoteNameBreadCrumbs displays data from db (only text)" />
+    <MESSAGE value="PLUM-33 Optimize imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-33 Optimize imports" />
   </component>
 </project>
