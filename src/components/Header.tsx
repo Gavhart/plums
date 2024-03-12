@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/plums.webp";
-import { Bars3Icon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
           />
           <MagnifyingGlassIcon className="absolute top-3 right-3 w-5 h-5 text-gray-500" />
         </div>
-        <Bars3Icon className="w-8 h-8 ml-4" />
+     
       </div>
     </header>
   );
