@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="flex flex-col md:flex-row justify-between items-center px-4 py-2 md:px-8 md:py-4">
       <div className="flex items-center">
-        <Image className="w-16 h-16 md:w-24 md:h-24" alt="logo" src={logo} />
+        <Image className="w-16 h-16 md:w-24 md:h-24" alt="logo" src={logo} priority />
         <h1 className="text-xl md:text-3xl font-bold ml-2">Plums</h1>
       </div>
       <div className="flex items-center mt-4 md:mt-0">
