@@ -62,7 +62,7 @@ function createTopic(name) {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             return [2 /*return*/, db_1.db.topic.create({
-                    data: { name: name },
+                    data: { name: name, createdAt: new Date().toISOString() },
                 })];
         });
     });
