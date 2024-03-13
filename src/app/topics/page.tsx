@@ -5,12 +5,11 @@ import CreateTopic from "@/components/CreateTopic";
 export default function FoldersPage() {
   return (
     <>
-        <div className="flex flex-col gap-8">
-            <TopicsBreadcrumbs />
-            <CreateTopic />
-            <TopicsData />
-        </div>
-
+      <div className="flex flex-col gap-8">
+        <TopicsBreadcrumbs />
+        <CreateTopic />
+        <TopicsData />
+      </div>
     </>
   );
 }
