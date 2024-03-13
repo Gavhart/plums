@@ -17,31 +17,38 @@ model Topic {
   id         String      @id @default(auto()) @map("_id") @db.ObjectId
   name       String
   createdAt  DateTime    @db.Date
+  updatedAt  DateTime    @updatedAt
   textNotes  TextNote[]
   imageNotes ImageNote[]
   linkNotes  LinkNote[]
 }
 
 model TextNote {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
-  content String
-  title   String
-  Topic   Topic  @relation(fields: [topicId], references: [id])
-  topicId String @db.ObjectId
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  content   String
+  title     String
+  createdAt DateTime @db.Date
+  updatedAt DateTime @updatedAt
+  Topic     Topic    @relation(fields: [topicId], references: [id])
+  topicId   String   @db.ObjectId
 }
 
 model ImageNote {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
-  url     String
-  title   String
-  Topic   Topic  @relation(fields: [topicId], references: [id])
-  topicId String @db.ObjectId
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  url       String
+  title     String
+  createdAt DateTime @db.Date
+  updatedAt DateTime @updatedAt
+  Topic     Topic    @relation(fields: [topicId], references: [id])
+  topicId   String   @db.ObjectId
 }
 
 model LinkNote {
-  id      String @id @default(auto()) @map("_id") @db.ObjectId
-  url     String
-  title   String
-  Topic   Topic  @relation(fields: [topicId], references: [id])
-  topicId String @db.ObjectId
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  url       String
+  title     String
+  createdAt DateTime @db.Date
+  updatedAt DateTime @updatedAt
+  Topic     Topic    @relation(fields: [topicId], references: [id])
+  topicId   String   @db.ObjectId
 }
