@@ -21,7 +21,11 @@ const Page = async ({
     return;
   }
 
-  const allTitles = [...titles.textTitle, ...titles.imageTitle, ...titles.linkTitle]
+  const allTitles = [
+    ...titles.textTitle,
+    ...titles.imageTitle,
+    ...titles.linkTitle,
+  ];
 
   return (
     <div>

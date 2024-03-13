@@ -11,3 +11,9 @@ export async function getTopicName(folderId: string) {
     },
   });
 }
+
+export async function createTopic(name: string) {
+  return db.topic.create({
+    data: { name, createdAt: new Date().toISOString() },
+  });
+}

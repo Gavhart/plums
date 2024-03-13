@@ -133,7 +133,7 @@ var __generator =
     }
   };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getTopicName = exports.getTopics = void 0;
+exports.createTopic = exports.getTopicName = exports.getTopics = void 0;
 var db_1 = require("../db");
 function getTopics() {
   return __awaiter(this, void 0, void 0, function () {
@@ -158,3 +158,16 @@ function getTopicName(folderId) {
   });
 }
 exports.getTopicName = getTopicName;
+function createTopic(name) {
+  return __awaiter(this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+      return [
+        2 /*return*/,
+        db_1.db.topic.create({
+          data: { name: name, createdAt: new Date().toISOString() },
+        }),
+      ];
+    });
+  });
+}
+exports.createTopic = createTopic;

@@ -9,8 +9,8 @@ const LinkContentData = async ({ noteId }: { noteId: string }) => {
   return (
     <div>
       <a href={linkContent.url} target="_blank" rel="noopener noreferrer">
-  {linkContent.title}
-</a>
+        {linkContent.title}
+      </a>
     </div>
   );
 };
