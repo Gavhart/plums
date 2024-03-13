@@ -1,15 +1,16 @@
 import TopicsBreadcrumbs from "@/components/Breadcrumbs/TopicsBreadcrumbs";
 import TopicsData from "@/components/TopicsData";
+import CreateTopic from "@/components/CreateTopic";
 
 export default function FoldersPage() {
   return (
     <>
-      <TopicsBreadcrumbs />
+        <div className="flex flex-col gap-8">
+            <TopicsBreadcrumbs />
+            <CreateTopic />
+            <TopicsData />
+        </div>
 
-      <p>+ topic</p>
-      <p>+ tags</p>
-
-      <TopicsData />
     </>
   );
 }
