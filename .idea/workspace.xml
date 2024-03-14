@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8361705-335a-479e-8b39-93ad08656fe6" name="Changes" comment="" />
+    <list default="true" id="d8361705-335a-479e-8b39-93ad08656fe6" name="Changes" comment="PLUM-42" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="PLUM-12" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,16 +39,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="PLUM-42" />
+                    <option name="lastUsedInstant" value="1710448996" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1710303872" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="PLUM-12" />
-                    <option name="lastUsedInstant" value="1710303854" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="PLUM-40" />
-                    <option name="lastUsedInstant" value="1710278245" />
                   </RecentBranch>
                 </list>
               </option>
@@ -95,7 +91,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "PLUM-42",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -278,7 +274,6 @@
     <MESSAGE value="PLUM-33 Optimize imports" />
     <MESSAGE value="PLUM-33 Breadcrumbs finished" />
     <MESSAGE value="PLUM-40 Priority image" />
-    <MESSAGE value="PLUM-40 fix favicon" />
     <MESSAGE value="PLUM-12 Can create topic" />
     <MESSAGE value="PLUM-12 Lint and Format" />
     <MESSAGE value="PLUM-12 Fixed linting errors" />
@@ -287,6 +282,7 @@
     <MESSAGE value="PLUM-12 Updated schema so all collections have createdAt and updatedAt" />
     <MESSAGE value="PLUM-12 Fixed broken image" />
     <MESSAGE value="PLUM-12 Prettier" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLUM-12 Prettier" />
+    <MESSAGE value="PLUM-40 fix favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLUM-40 fix favicon" />
   </component>
 </project>
