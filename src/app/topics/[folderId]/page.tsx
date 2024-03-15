@@ -27,10 +27,11 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
 
     await createTextNote(
       params.folderId,
-      formData.get("") as string,
-      formData.get("") as string,
+      formData.get("title") as string,
+      formData.get("content") as string,
     );
-    redirect(`/folder/${params.folderId}`);
+
+    redirect(`/topics/${params.folderId}`);
   }
 
   return (
