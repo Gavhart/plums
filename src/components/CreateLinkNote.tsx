@@ -9,14 +9,19 @@ const CreateLinkNote = () => {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <div className="flex flex-col gap-8 py-4 bg-custom-off-white">
+    <div className="flex flex-col gap-8 py-4">
       <Button onClick={handleOpen} variant="gradient" placeholder={undefined}>
         Create Link Note
       </Button>
       <div hidden={!open} className={`${open && "flex flex-col gap-8 "}`}>
         <Input name="title" label="Title" crossOrigin={undefined} />
         <Input name="url" label="Url" crossOrigin={undefined} />
-        <Button type="submit" placeholder={undefined} onClick={handleOpen}>
+        <Button
+          type="submit"
+          color="green"
+          placeholder={undefined}
+          onClick={handleOpen}
+        >
           Submit
         </Button>
       </div>

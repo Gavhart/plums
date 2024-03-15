@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button, Input, Textarea } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
-const CreateTextNote = () => {
+const CreateImageNote = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
@@ -11,11 +11,11 @@ const CreateTextNote = () => {
   return (
     <div className="flex flex-col gap-8 py-4">
       <Button onClick={handleOpen} variant="gradient" placeholder={undefined}>
-        Create Text Note
+        Create Link Note
       </Button>
       <div hidden={!open} className={`${open && "flex flex-col gap-8 "}`}>
         <Input name="title" label="Title" crossOrigin={undefined} />
-        <Textarea name="content" label="Your notes" rows={16} />
+        <Input name="url" label="Url" crossOrigin={undefined} />
         <Button
           type="submit"
           color="green"
@@ -29,4 +29,4 @@ const CreateTextNote = () => {
   );
 };
 
-export default CreateTextNote;
+export default CreateImageNote;

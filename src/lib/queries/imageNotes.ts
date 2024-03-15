@@ -15,3 +15,18 @@ export async function getImageContent(noteId: string) {
     },
   });
 }
+
+export async function createImageNote(
+  folderId: string,
+  title: string,
+  url: string,
+) {
+  return db.imageNote.create({
+    data: {
+      topicId: folderId,
+      title,
+      url,
+      createdAt: new Date().toISOString(),
+    },
+  });
+}
