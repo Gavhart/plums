@@ -15,3 +15,18 @@ export async function getNoteContent(noteId: string) {
     },
   });
 }
+
+export async function createTextNote(
+  folderId: string,
+  title: string,
+  content: string,
+) {
+  return db.textNote.create({
+    data: {
+      topicId: folderId,
+      title,
+      content,
+      createdAt: new Date().toISOString(),
+    },
+  });
+}
