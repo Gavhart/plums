@@ -16,7 +16,12 @@ const CreateTextNote = () => {
       <div hidden={!open} className={`${open && "flex flex-col gap-8 "}`}>
         <Input name="title" label="Title" crossOrigin={undefined} />
         <Textarea name="content" label="Your notes" rows={16} />
-        <Button type="submit" placeholder={undefined} onClick={handleOpen}>
+        <Button
+          type="submit"
+          color="green"
+          placeholder={undefined}
+          onClick={handleOpen}
+        >
           Submit
         </Button>
       </div>

@@ -16,7 +16,12 @@ const CreateImageNote = () => {
       <div hidden={!open} className={`${open && "flex flex-col gap-8 "}`}>
         <Input name="title" label="Title" crossOrigin={undefined} />
         <Input name="url" label="Url" crossOrigin={undefined} />
-        <Button type="submit" placeholder={undefined} onClick={handleOpen}>
+        <Button
+          type="submit"
+          color="green"
+          placeholder={undefined}
+          onClick={handleOpen}
+        >
           Submit
         </Button>
       </div>

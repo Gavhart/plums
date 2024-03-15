@@ -20,12 +20,13 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
         currentTopic={topicName.name}
       />
 
-      <UpdateTopicNameContainer
-        folderId={params.folderId}
-        topicName={topicName.name}
-      />
-
-      <CreateNotes folderId={params.folderId} />
+      <div className="flex flex-col gap-4 my-4">
+        <UpdateTopicNameContainer
+          folderId={params.folderId}
+          topicName={topicName.name}
+        />
+        <CreateNotes folderId={params.folderId} />
+      </div>
 
       <TextNotesData topicId={params.folderId} />
       <LinkNotesData topicId={params.folderId} />

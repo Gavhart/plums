@@ -18,7 +18,7 @@ const UpdateTopicNameContainer = ({
   }
 
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col sm:flex-row gap-4 justify-between">
       <h1 className="text-4xl">{topicName}</h1>
       <form className="relative flex w-1/2" action={updateTopicAction}>
         <UpdateTopicName />
