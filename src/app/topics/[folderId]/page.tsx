@@ -12,52 +12,13 @@ import { createLinkNote } from "@/lib/queries/linkNotes";
 import CreateLinkNote from "@/components/CreateLinkNote";
 import { createImageNote } from "@/lib/queries/imageNotes";
 import CreateImageNote from "@/components/CreateImageNote";
+import CreateNotes from "@/components/CreateNotes";
+import UpdateTopicNameContainer from "@/components/UpdateTopicNameContainer";
 
 const Page = async ({ params }: { params: { folderId: string } }) => {
   const topicName = await getTopicName(params.folderId);
   if (!topicName) {
     return;
-  }
-
-  async function updateTopicAction(formData: FormData) {
-    "use server";
-
-    await updateTopic(params.folderId, formData.get("topicName") as string);
-    redirect(`/topics/${params.folderId}`);
-  }
-
-  async function createTextNoteAction(formData: FormData) {
-    "use server";
-
-    await createTextNote(
-      params.folderId,
-      formData.get("title") as string,
-      formData.get("content") as string,
-    );
-
-    redirect(`/topics/${params.folderId}`);
-  }
-
-  async function createLinkNoteAction(formData: FormData) {
-    "use server";
-
-    await createLinkNote(
-      params.folderId,
-      formData.get("title") as string,
-      formData.get("url") as string,
-    );
-    redirect(`/topics/${params.folderId}`);
-  }
-
-  async function createImageNoteAction(formData: FormData) {
-    "use server";
-
-    await createImageNote(
-      params.folderId,
-      formData.get("title") as string,
-      formData.get("url") as string,
-    );
-    redirect(`/topics/${params.folderId}`);
   }
 
   return (
@@ -67,24 +28,12 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
         currentTopic={topicName.name}
       />
 
-      <div className="flex justify-between">
-        <h1 className="text-4xl">{topicName.name}</h1>
-        <form className="relative flex w-1/2" action={updateTopicAction}>
-          <UpdateTopicName />
-        </form>
-      </div>
+      <UpdateTopicNameContainer
+        folderId={params.folderId}
+        topicName={topicName.name}
+      />
 
-      <form action={createTextNoteAction}>
-        <CreateTextNote />
-      </form>
-
-      <form action={createLinkNoteAction}>
-        <CreateLinkNote />
-      </form>
-
-      <form action={createImageNoteAction}>
-        <CreateImageNote />
-      </form>
+      <CreateNotes folderId={params.folderId} />
 
       <TextNotesData topicId={params.folderId} />
       <LinkNotesData topicId={params.folderId} />

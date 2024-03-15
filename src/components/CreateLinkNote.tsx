@@ -9,7 +9,7 @@ const CreateLinkNote = () => {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <div className="flex flex-col gap-8 py-4 bg-custom-off-white">
+    <div className="flex flex-col gap-8 py-4">
       <Button onClick={handleOpen} variant="gradient" placeholder={undefined}>
         Create Link Note
       </Button>
