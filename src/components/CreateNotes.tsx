@@ -43,15 +43,15 @@ const CreateNotes = ({ folderId }: { folderId: string }) => {
   }
   return (
     <div className=" bg-custom-off-white">
-      <form action={createTextNoteAction}>
+      <form action={createTextNoteAction} className="border-b-2 border-black">
         <CreateTextNote />
       </form>
 
-      <form action={createLinkNoteAction}>
+      <form action={createLinkNoteAction} className="border-b-2 border-black">
         <CreateLinkNote />
       </form>
 
-      <form action={createImageNoteAction}>
+      <form action={createImageNoteAction} className="border-b-2 border-black">
         <CreateImageNote />
       </form>
     </div>
