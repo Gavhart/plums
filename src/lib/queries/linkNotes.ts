@@ -15,3 +15,18 @@ export async function getLinkContent(noteId: string) {
     },
   });
 }
+
+export async function createLinkNote(
+  folderId: string,
+  title: string,
+  url: string,
+) {
+  return db.linkNote.create({
+    data: {
+      topicId: folderId,
+      title,
+      url,
+      createdAt: new Date().toISOString(),
+    },
+  });
+}

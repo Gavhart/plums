@@ -8,6 +8,8 @@ import { UpdateTopicName } from "@/components/UpdateTopicName";
 import { redirect } from "next/navigation";
 import CreateTextNote from "@/components/CreateTextNote";
 import { createTextNote } from "@/lib/queries/textNotes";
+import { createLinkNote } from "@/lib/queries/linkNotes";
+import CreateLinkNote from "@/components/CreateLinkNote";
 
 const Page = async ({ params }: { params: { folderId: string } }) => {
   const topicName = await getTopicName(params.folderId);
@@ -34,6 +36,17 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
     redirect(`/topics/${params.folderId}`);
   }
 
+  async function createLinkNoteAction(formData: FormData) {
+    "use server";
+
+    await createLinkNote(
+      params.folderId,
+      formData.get("title") as string,
+      formData.get("url") as string,
+    );
+    redirect(`/topics/${params.folderId}`);
+  }
+
   return (
     <div>
       <TopicNameBreadCrumb
@@ -51,7 +64,11 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
       <form action={createTextNoteAction}>
         <CreateTextNote />
       </form>
-      <p>+ link</p>
+
+      <form action={createLinkNoteAction}>
+        <CreateLinkNote />
+      </form>
+
       <p>+ image</p>
 
       <TextNotesData topicId={params.folderId} />
