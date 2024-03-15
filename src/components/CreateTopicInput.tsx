@@ -1,6 +1,6 @@
 "use client";
 
-import { Input, Button } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
 const CreateTopicInput = () => {
   return (

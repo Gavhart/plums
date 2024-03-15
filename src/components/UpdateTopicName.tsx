@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Input, Button } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
 export function UpdateTopicName() {
   const [text, setText] = React.useState("");

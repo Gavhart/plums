@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Input, Textarea, Button, Dialog } from "@material-tailwind/react";
+import { Button, Input, Textarea } from "@material-tailwind/react";
 
 const CreateTextNote = () => {
   const [open, setOpen] = useState(false);
