@@ -6,6 +6,8 @@ import TopicNameBreadCrumb from "@/components/Breadcrumbs/TopicNameBreadCrumb";
 import { getTopicName, updateTopic } from "@/lib/queries/topics";
 import { UpdateTopicName } from "@/components/UpdateTopicName";
 import { redirect } from "next/navigation";
+import CreateTextNote from "@/components/CreateTextNote";
+import { createTextNote } from "@/lib/queries/textNotes";
 
 const Page = async ({ params }: { params: { folderId: string } }) => {
   const topicName = await getTopicName(params.folderId);
@@ -13,10 +15,22 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
     return;
   }
 
-  async function action(formData: FormData) {
+  async function updateTopicAction(formData: FormData) {
     "use server";
 
     await updateTopic(params.folderId, formData.get("topicName") as string);
+    redirect(`/topics/${params.folderId}`);
+  }
+
+  async function createTextNoteAction(formData: FormData) {
+    "use server";
+
+    await createTextNote(
+      params.folderId,
+      formData.get("title") as string,
+      formData.get("content") as string,
+    );
+
     redirect(`/topics/${params.folderId}`);
   }
 
@@ -29,12 +43,14 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
 
       <div className="flex justify-between">
         <h1 className="text-4xl">{topicName.name}</h1>
-        <form className="relative flex w-1/2" action={action}>
+        <form className="relative flex w-1/2" action={updateTopicAction}>
           <UpdateTopicName />
         </form>
       </div>
 
-      <p>+ text</p>
+      <form action={createTextNoteAction}>
+        <CreateTextNote />
+      </form>
       <p>+ link</p>
       <p>+ image</p>
 
