@@ -5,6 +5,7 @@ import LinkContentData from "@/components/LinkContentData";
 import ImageContentData from "@/components/ImageContentData";
 import { getTopicName } from "@/lib/queries/topics";
 import { getTitle } from "@/lib/queries/getTitle";
+import UpdateNoteNameContainer from "@/components/UpdateNoteNameContainer";
 
 const Page = async ({
   params,
@@ -35,6 +36,13 @@ const Page = async ({
         noteName={allTitles[0].title}
         noteId={params.noteId}
       />
+
+      <UpdateNoteNameContainer
+        folderId={params.folderId}
+        noteId={params.noteId}
+        topicName={topicName.name}
+      />
+
       <TextContentData noteId={params.noteId} />
       <LinkContentData noteId={params.noteId} />
       <ImageContentData noteId={params.noteId} />

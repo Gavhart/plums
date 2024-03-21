@@ -18,7 +18,7 @@ export async function createTopic(name: string) {
   });
 }
 
-export async function updateTopic(folderId: string, name: string) {
+export async function updateNote(folderId: string, name: string) {
   return db.topic.update({
     where: {
       id: folderId,
