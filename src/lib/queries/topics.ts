@@ -17,14 +17,3 @@ export async function createTopic(name: string) {
     data: { name, createdAt: new Date().toISOString() },
   });
 }
-
-export async function updateNote(folderId: string, name: string) {
-  return db.topic.update({
-    where: {
-      id: folderId,
-    },
-    data: {
-      name,
-    },
-  });
-}

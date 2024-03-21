@@ -40,7 +40,6 @@ const Page = async ({
       <UpdateNoteNameContainer
         folderId={params.folderId}
         noteId={params.noteId}
-        topicName={topicName.name}
       />
 
       <TextContentData noteId={params.noteId} />
