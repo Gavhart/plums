@@ -28,3 +28,11 @@ export async function updateTopic(folderId: string, name: string) {
     },
   });
 }
+
+export async function deleteTopic(folderId: string) {
+  return db.topic.delete({
+    where: {
+      id: folderId,
+    },
+  });
+}
