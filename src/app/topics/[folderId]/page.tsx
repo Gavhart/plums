@@ -6,6 +6,7 @@ import TopicNameBreadCrumb from "@/components/Breadcrumbs/TopicNameBreadCrumb";
 import { getTopicName } from "@/lib/queries/topics";
 import CreateNotes from "@/components/CreateNotes";
 import UpdateTopicNameContainer from "@/components/UpdateTopicNameContainer";
+import DeleteTopic from "@/components/DeleteTopic";
 
 const Page = async ({ params }: { params: { folderId: string } }) => {
   const topicName = await getTopicName(params.folderId);
@@ -19,6 +20,8 @@ const Page = async ({ params }: { params: { folderId: string } }) => {
         folderId={params.folderId}
         currentTopic={topicName.name}
       />
+
+      <DeleteTopic folderId={params.folderId} />
 
       <div className="flex flex-col gap-4 my-4">
         <UpdateTopicNameContainer

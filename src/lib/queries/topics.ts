@@ -1,4 +1,5 @@
 import { db } from "../db";
+import {id} from "postcss-selector-parser";
 
 export async function getTopics() {
   return db.topic.findMany();
@@ -27,4 +28,12 @@ export async function updateTopic(folderId: string, name: string) {
       name,
     },
   });
+}
+
+export async function deleteTopic(folderId:string) {
+  return db.topic.delete({
+    where: {
+      id: folderId
+    }
+  })
 }
