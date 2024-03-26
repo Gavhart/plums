@@ -6,6 +6,7 @@ import ImageContentData from "@/components/ImageContentData";
 import { getTopicName } from "@/lib/queries/topics";
 import { getTitle } from "@/lib/queries/getTitle";
 import UpdateNoteNameContainer from "@/components/UpdateNoteNameContainer";
+import DeleteNote from "@/components/DeleteNote";
 
 const Page = async ({
   params,
@@ -36,6 +37,7 @@ const Page = async ({
         noteName={allTitles[0].title}
         noteId={params.noteId}
       />
+      <DeleteNote/>
 
       <UpdateNoteNameContainer
         folderId={params.folderId}
