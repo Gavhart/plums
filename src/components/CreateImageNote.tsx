@@ -10,12 +10,16 @@ const CreateImageNote = () => {
 
   return (
     <div className="flex flex-col gap-8 py-4">
+      {/* @ts-ignore */}
       <Button onClick={handleOpen} variant="gradient" placeholder={undefined}>
-        Create Link Note
+        Create Image Note
       </Button>
       <div hidden={!open} className={`${open && "flex flex-col gap-8 "}`}>
+        {/* @ts-ignore */}
         <Input name="title" label="Title" crossOrigin={undefined} />
+        {/* @ts-ignore */}
         <Input name="url" label="Url" crossOrigin={undefined} />
+        {/* @ts-ignore */}
         <Button
           type="submit"
           color="green"

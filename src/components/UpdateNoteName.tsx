@@ -19,8 +19,6 @@ export function UpdateNoteName() {
         variant="standard"
         crossOrigin={null}
         name="noteName"
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
       />
       <Button
         size="sm"
@@ -29,8 +27,6 @@ export function UpdateNoteName() {
         className="!absolute right-1 top-1 rounded"
         placeholder={null}
         type="submit"
-        onPointerEnterCapture={undefined}
-        onPointerLeaveCapture={undefined}
       >
         Update
       </Button>

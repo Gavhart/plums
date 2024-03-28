@@ -2,6 +2,7 @@
 
 import React, { FormEvent } from "react";
 import { deleteTopicAction } from "@/app/topics/[folderId]/[noteId]/action";
+import { Button } from "@material-tailwind/react";
 
 const DeleteTopic = ({ folderId }: { folderId: string }) => {
   const submitHandler = async (e: FormEvent) => {
@@ -12,9 +13,10 @@ const DeleteTopic = ({ folderId }: { folderId: string }) => {
 
   return (
     <form onSubmit={submitHandler}>
-      <button type="submit" className="p-2 bg-red-900">
-        Submit
-      </button>
+      {/*@ts-ignore*/}
+      <Button type="submit" color="red">
+        Delete Topic
+      </Button>
     </form>
   );
 };
