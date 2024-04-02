@@ -14,15 +14,19 @@ const DeleteButton = ({
   const submitHandler = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
     await deleteNoteAction({ noteId, folderId });
   };
 
   return (
     <form onSubmit={submitHandler}>
-      <button>{folderId}</button>
+      <Button
+        type="submit"
+        placeholder={null}
+        onPointerEnterCapture={null}
+        onPointerLeaveCapture={null}
+      >
+        Delete note
+      </Button>
     </form>
   );
 };
