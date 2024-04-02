@@ -23,3 +23,57 @@ export async function deleteTextNote(topicId: string) {
     },
   });
 }
+
+export async function deleteImageNoteWithNoteId(noteId: string) {
+  const data = await db.imageNote.findUnique({
+    where: {
+      id: noteId,
+    },
+  });
+
+  if (!data) {
+    return "Data doesnt exist";
+  }
+
+  return db.imageNote.delete({
+    where: {
+      id: noteId,
+    },
+  });
+}
+
+export async function deleteLinkNoteWithNoteId(noteId: string) {
+  const data = await db.linkNote.findUnique({
+    where: {
+      id: noteId,
+    },
+  });
+
+  if (!data) {
+    return "Data doesnt exist";
+  }
+
+  return db.linkNote.delete({
+    where: {
+      id: noteId,
+    },
+  });
+}
+
+export async function deleteTextNoteWithNoteId(noteId: string) {
+  const data = await db.textNote.findUnique({
+    where: {
+      id: noteId,
+    },
+  });
+
+  if (!data) {
+    return "Data doesnt exist";
+  }
+
+  return db.textNote.delete({
+    where: {
+      id: noteId,
+    },
+  });
+}

@@ -7,10 +7,13 @@ export async function deleteNote(id: string) {
       db.imageNote.delete({ where: { id } }),
       db.linkNote.delete({ where: { id } }),
     ]);
-    
-    return { textNote: results[0], imageNote: results[1], linkNote: results[2] };
-  } catch (error) {
 
+    return {
+      textNote: results[0],
+      imageNote: results[1],
+      linkNote: results[2],
+    };
+  } catch (error) {
     throw error;
   }
 }
