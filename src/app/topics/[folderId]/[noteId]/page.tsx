@@ -37,8 +37,8 @@ const Page = async ({
         noteName={allTitles[0].title}
         noteId={params.noteId}
       />
-      <DeleteNote/>
 
+      <DeleteNote noteId={params.noteId} folderId={params.folderId} />
 
       <UpdateNoteNameContainer
         folderId={params.folderId}
