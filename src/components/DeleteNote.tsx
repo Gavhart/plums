@@ -19,12 +19,8 @@ const DeleteButton = ({
 
   return (
     <form onSubmit={submitHandler}>
-      <Button
-        type="submit"
-        placeholder={null}
-        onPointerEnterCapture={null}
-        onPointerLeaveCapture={null}
-      >
+      {/*@ts-ignore*/}
+      <Button type="submit" color="red">
         Delete note
       </Button>
     </form>
