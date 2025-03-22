@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className=" bg-gradient-to-br from-custom-soft-lavender to-custom-vibrant-orchid">
+      <body className=" bg-linear-to-br from-custom-soft-lavender to-custom-vibrant-orchid">
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

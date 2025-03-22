@@ -11,7 +11,7 @@ const CreateTopicInput = () => {
         color="black"
         variant="standard"
         crossOrigin={undefined}
-        className="!text-black !border-black"
+        className="text-black! border-black!"
       />
       <Button placeholder={null} type="submit">
         Submit

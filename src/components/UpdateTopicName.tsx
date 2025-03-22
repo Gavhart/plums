@@ -13,7 +13,7 @@ export function UpdateTopicName() {
         type="text"
         value={text}
         onChange={onChange}
-        className="pr-20 !border-black !text-black"
+        className="pr-20 border-black! text-black!"
         label="Update Topic Name"
         color="black"
         variant="standard"
@@ -24,7 +24,7 @@ export function UpdateTopicName() {
         size="sm"
         color={"black"}
         disabled={!text}
-        className="!absolute right-1 top-1 rounded"
+        className="absolute! right-1 top-1 rounded-sm"
         placeholder={null}
         type="submit"
       >
