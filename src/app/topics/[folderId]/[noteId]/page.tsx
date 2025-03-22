@@ -8,11 +8,12 @@ import { getTitle } from "@/lib/queries/getTitle";
 import UpdateNoteNameContainer from "@/components/UpdateNoteNameContainer";
 import DeleteNote from "@/components/DeleteNote";
 
-const Page = async ({
-  params,
-}: {
-  params: { noteId: string; folderId: string };
-}) => {
+const Page = async (
+  props: {
+    params: Promise<{ noteId: string; folderId: string }>;
+  }
+) => {
+  const params = await props.params;
   const topicName = await getTopicName(params.folderId);
   if (!topicName) {
     return;

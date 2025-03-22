@@ -8,7 +8,8 @@ import CreateNotes from "@/components/CreateNotes";
 import UpdateTopicNameContainer from "@/components/UpdateTopicNameContainer";
 import DeleteTopic from "@/components/DeleteTopic";
 
-const Page = async ({ params }: { params: { folderId: string } }) => {
+const Page = async (props: { params: Promise<{ folderId: string }> }) => {
+  const params = await props.params;
   const topicName = await getTopicName(params.folderId);
   if (!topicName) {
     return;
